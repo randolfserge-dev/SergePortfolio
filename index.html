@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serge Brito // Desenvolvedor Java & Backend</title>
+  <meta name="description" content="Portfolio de Serge Brito: Desenvolvedor Java com sólido domínio em backend, APIs RESTful, lógica de programação e interfaces web. Curitiba, PR.">
+  <meta name="author" content="Serge Brito">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Serge Brito // Desenvolvedor Java & Backend">
+  <meta property="og:description" content="Software developer focado em Java, arquitetura orientada a objetos, APIs e interfaces web limpas e funcionais.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo-link" aria-label="Serge Brito - Início">
+        <img src="assets/serge-dev-logo.png" alt="SERGE.DEV" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Quick Action Buttons -->
+      <div class="header-actions">
+        <a href="assets/Curriculo_Serge_Brito.pdf" class="btn btn-outline btn-sm" download="Curriculo_Serge_Brito.pdf" title="Baixar Currículo em PDF">
+          <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Currículo</span>
+        </a>
+        <a href="mailto:sergebr4@gmail.com" class="btn btn-primary btn-sm">
+          <span>Enviar email</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-inner">
+      <ul class="drawer-nav">
+        <li><a href="#sobre" class="drawer-link">Sobre</a></li>
+        <li><a href="#ferramentas" class="drawer-link">Ferramentas</a></li>
+        <li><a href="#experiencia" class="drawer-link">Experiência</a></li>
+        <li><a href="#projetos" class="drawer-link">Projetos</a></li>
+        <li><a href="#contato" class="drawer-link">Contato</a></li>
+      </ul>
+      <div class="drawer-actions">
+        <a href="assets/Curriculo_Serge_Brito.pdf" class="btn btn-outline w-full" download>Download Currículo (.PDF)</a>
+        <a href="mailto:sergebr4@gmail.com" class="btn btn-primary w-full">Enviar email</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-main">
+
+    <!-- HERO SECTION (Inspired by Souza.dez) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-code hero-code-left" aria-hidden="true">
+        <span>const profile = {</span>
+        <span>  role: "Java",</span>
+        <span>  focus: "backend",</span>
+        <span>  city: "Curitiba"</span>
+        <span>};</span>
+      </div>
+      <div class="hero-code hero-code-right" aria-hidden="true">
+        <span>GET /api/profile</span>
+        <span>status: 200</span>
+        <span>{</span>
+        <span>  available: true</span>
+        <span>}</span>
+      </div>
+
+      <div class="content-container">
+        
+        <div class="hero-content">
+          
+          <div class="hero-badge-tag">
+            <span class="badge-dot"></span>
+            <span>DESENVOLVEDOR JAVA & BACKEND // CURITIBA, PR</span>
+          </div>
+
+          <h1 class="hero-quote">
+            “Construindo software resiliente, focado em lógica, performance e simplicidade.”
+          </h1>
+          <p class="hero-author">— Serge Brito, Desenvolvedor de Software</p>
+
+          <p class="hero-description">
+            Estudante de Análise e Desenvolvimento de Sistemas com sólida base em <strong>Java</strong>, orientação a objetos e bancos de dados. Experiência prática na <strong>Wipro Technologies</strong> com integrações de APIs da Meta, CRMs e análise de dados.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="mailto:sergebr4@gmail.com" class="btn btn-primary">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Enviar email</span>
+            </a>
+            <a href="https://github.com/randolfserge-dev" target="_blank" rel="noopener noreferrer" class="btn btn-pill">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://wa.me/5541984751023?text=Olá%20Serge,%20vi%20seu%20portfolio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" class="btn btn-pill">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+            <a href="assets/Curriculo_Serge_Brito.pdf" class="btn btn-pill" download="Curriculo_Serge_Brito.pdf">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Currículo (.PDF)</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: BIO HIGHLIGHT CARD (Souza.dez Highlight Box) -->
+    <section class="section bio-section" id="sobre">
+      <div class="content-container">
+        
+        <div class="bio-highlight-box">
+          <div class="bio-eyebrow">BIO</div>
+          <p class="bio-text">
+            Cursando <mark class="hl">Análise e Desenvolvimento de Sistemas</mark> pela UNICESUMAR em Curitiba/PR. Experiência profissional técnica na <mark class="hl">Wipro Technologies</mark> com <mark class="hl">API de Conversões da Meta</mark>, integração de CRMs e troubleshooting de eventos. Domínio em <mark class="hl">Java</mark>, lógica orientada a objetos, <mark class="hl">APIs RESTful</mark>, SQL e desenvolvimento web com <mark class="hl">HTML, CSS e JavaScript</mark>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: TOOLS & TECH STACK -->
+    <section class="section tools-section" id="ferramentas">
+      <div class="content-container">
+        
+        <div class="section-heading-clean">
+          <span class="heading-tag">STACK</span>
+          <h2 class="heading-title">Ferramentas do dia a dia</h2>
+        </div>
+
+        <div class="tools-cloud">
+          <span class="tool-pill"><i class="tool-dot"></i> Java SE</span>
+          <span class="tool-pill"><i class="tool-dot"></i> Programação Orientada a Objetos (POO)</span>
+          <span class="tool-pill"><i class="tool-dot"></i> Estruturas de Dados</span>
+          <span class="tool-pill"><i class="tool-dot"></i> Lógica de Programação</span>
+          <span class="tool-pill"><i class="tool-dot"></i> APIs RESTful</span>
+          <span class="tool-pill"><i class="tool-dot"></i> SQL & Banco de Dados</span>
+          <span class="tool-pill"><i class="tool-dot"></i> JavaScript ES6+</span>
+          <span class="tool-pill"><i class="tool-dot"></i> HTML5 Semântico</span>
+          <span class="tool-pill"><i class="tool-dot"></i> CSS3 & Flex/Grid</span>
+          <span class="tool-pill"><i class="tool-dot"></i> Git & GitHub</span>
+          <span class="tool-pill"><i class="tool-dot"></i> IntelliJ IDEA</span>
+          <span class="tool-pill"><i class="tool-dot"></i> Visual Studio Code</span>
+          <span class="tool-pill"><i class="tool-dot"></i> Meta Pixel & Conversions API</span>
+          <span class="tool-pill"><i class="tool-dot"></i> Troubleshooting & Analytics</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: EXPERIENCE & EDUCATION (Souza.dez Company List) -->
+    <section class="section experience-section" id="experiencia">
+      <div class="content-container">
+        
+        <div class="section-heading-clean">
+          <span class="heading-tag">TRAJETÓRIA</span>
+          <h2 class="heading-title">Onde eu trabalhei</h2>
+        </div>
+
+        <div class="experience-list">
+          
+          <!-- Job 1: Wipro -->
+          <div class="experience-card">
+            <div class="exp-icon-box">
+              <span class="exp-monogram">W</span>
+            </div>
+            <div class="exp-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Meta Technical Pro</h3>
+                  <div class="exp-company">Wipro Technologies · Curitiba, PR</div>
+                </div>
+                <span class="exp-period">09/2025 — 07/2026</span>
+              </div>
+              <p class="exp-desc">
+                Auxílio na implementação, configuração e otimização do Pixel da Meta e da API de Conversões. Atuação direta na integração técnica de CRMs com o Ads Manager da Meta, suporte técnico para rastreamento de eventos, troubleshooting e colaboração com equipes multidisciplinares voltadas para qualidade de dados e eficiência de campanhas digitais.
+              </p>
+            </div>
+          </div>
+
+          <!-- Education: UNICESUMAR -->
+          <div class="experience-card">
+            <div class="exp-icon-box">
+              <span class="exp-monogram">U</span>
+            </div>
+            <div class="exp-content">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Graduação em Análise e Desenvolvimento de Sistemas</h3>
+                  <div class="exp-company">UNICESUMAR · Curitiba, PR</div>
+                </div>
+                <span class="exp-period">08/2025 — 05/2028</span>
+              </div>
+              <p class="exp-desc">
+                Formação acadêmica superior com foco no desenvolvimento de software, algoritmos, orientação a objetos em Java, estruturas de dados, modelagem de banco de dados relacional (SQL), redes de computadores e arquitetura de sistemas.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: PROJECTS (Souza.dez Card Grid) -->
+    <section class="section projects-section" id="projetos">
+      <div class="content-container">
+        
+        <div class="section-heading-clean">
+          <span class="heading-tag">PROJETOS</span>
+          <h2 class="heading-title">Coisas que eu construí</h2>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: LoginSystem Java -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="proj-badge">JAVA BACKEND</span>
+              <a href="https://github.com/randolfserge-dev/LoginSystem" target="_blank" rel="noopener noreferrer" class="proj-link-icon" title="Ver no GitHub">
+                <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+
+            <h3 class="proj-title">
+              <a href="https://github.com/randolfserge-dev/LoginSystem" target="_blank" rel="noopener noreferrer">
+                Sistema de Autenticação e Cadastro em Java
+              </a>
+            </h3>
+
+            <p class="proj-desc">
+              Aplicação interativa em Java construída para simular o fluxo real de segurança de login: cadastro seguro de credenciais, validação lógica de acesso e bloqueio automático de conta após 3 tentativas incorretas consecutivas.
+            </p>
+
+            <div class="proj-tech-tags">
+              <span class="tag-pill">Java 26</span>
+              <span class="tag-pill">POO</span>
+              <span class="tag-pill">Controle de Estados</span>
+              <span class="tag-pill">Segurança CLI</span>
+            </div>
+
+            <div class="proj-footer-links">
+              <a href="https://github.com/randolfserge-dev/LoginSystem" target="_blank" rel="noopener noreferrer" class="link-clean">
+                <span>Ver Repositório no GitHub</span>
+                <svg class="icon-svg-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: ShoesWebsite (Le Flame Snkrs) -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="proj-badge">E-COMMERCE & FRONTEND</span>
+              <a href="https://randolfserge-dev.github.io/ShoesWebsite/" target="_blank" rel="noopener noreferrer" class="proj-link-icon" title="Acessar site ao vivo">
+                <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+
+            <h3 class="proj-title">
+              <a href="https://randolfserge-dev.github.io/ShoesWebsite/" target="_blank" rel="noopener noreferrer">
+                Le Flame Snkrs — Loja & Catálogo Streetwear
+              </a>
+            </h3>
+
+            <p class="proj-desc">
+              Interface completa para catálogo de calçados streetwear. Desenvolvido com carrossel dinâmico, animações fluidas via CSS transform, barra de anúncios em rotação e navegação responsiva mobile-first com menu drawer.
+            </p>
+
+            <div class="proj-tech-tags">
+              <span class="tag-pill">JavaScript Vanilla</span>
+              <span class="tag-pill">HTML5 Semântico</span>
+              <span class="tag-pill">CSS3 Flex/Grid</span>
+              <span class="tag-pill">UI Responsiva</span>
+            </div>
+
+            <div class="proj-footer-links">
+              <a href="https://randolfserge-dev.github.io/ShoesWebsite/" target="_blank" rel="noopener noreferrer" class="link-clean">
+                <span>Demonstração Ao Vivo</span>
+                <svg class="icon-svg-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <a href="https://github.com/randolfserge-dev/ShoesWebsite" target="_blank" rel="noopener noreferrer" class="link-clean-subtle">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: EbookPetroleiro (Imersão na Sonda) -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <span class="proj-badge">ENGENHARIA & PUBLICAÇÃO</span>
+              <a href="https://randolfserge-dev.github.io/EbookPetroleiro/" target="_blank" rel="noopener noreferrer" class="proj-link-icon" title="Acessar plataforma">
+                <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+
+            <h3 class="proj-title">
+              <a href="https://randolfserge-dev.github.io/EbookPetroleiro/" target="_blank" rel="noopener noreferrer">
+                Imersão na Sonda — Plataforma Técnica P&G
+              </a>
+            </h3>
+
+            <p class="proj-desc">
+              Landing page técnica e plataforma para manual de engenharia de Petróleo & Gás (Sistema de Rotação). Possui simulador interativo de operação de perfuração offshore e telemetria de progresso de leitura em tempo real.
+            </p>
+
+            <div class="proj-tech-tags">
+              <span class="tag-pill">Simulador Offshore</span>
+              <span class="tag-pill">Telemetria de Leitura</span>
+              <span class="tag-pill">JavaScript ES6</span>
+              <span class="tag-pill">Landing Técnica</span>
+            </div>
+
+            <div class="proj-footer-links">
+              <a href="https://randolfserge-dev.github.io/EbookPetroleiro/" target="_blank" rel="noopener noreferrer" class="link-clean">
+                <span>Acessar Plataforma</span>
+                <svg class="icon-svg-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <a href="https://github.com/randolfserge-dev/EbookPetroleiro" target="_blank" rel="noopener noreferrer" class="link-clean-subtle">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT & CONVERSATION -->
+    <section class="section contact-section" id="contato">
+      <div class="content-container">
+        
+        <div class="contact-center-box">
+          <h2 class="contact-big-title">Vamos conversar.</h2>
+          <p class="contact-big-sub">
+            Estou disponível para oportunidades de estágio e desenvolvimento em Java e backend. Entre em contato para conversarmos sobre novos projetos e equipes.
+          </p>
+
+          <div class="contact-pill-actions">
+            <a href="mailto:sergebr4@gmail.com" class="btn btn-primary">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Enviar email</span>
+            </a>
+            <a href="https://wa.me/5592993023728?text=Olá%20Serge,%20vi%20seu%20portfolio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" class="btn btn-pill">
+              <span>WhatsApp</span>
+            </a>
+            <a href="https://github.com/randolfserge-dev" target="_blank" rel="noopener noreferrer" class="btn btn-pill">
+              <span>GitHub</span>
+            </a>
+            <a href="assets/Curriculo_Serge_Brito.pdf" class="btn btn-pill" download="Curriculo_Serge_Brito.pdf">
+              <span>Currículo PDF</span>
+            </a>
+          </div>
+
+          <div class="contact-meta-info">
+            <span>Email: <a href="mailto:sergebr4@gmail.com">sergebr4@gmail.com</a></span>
+            <span class="sep">·</span>
+            <span>Telefone: (41) 98475-1023</span>
+            <span class="sep">·</span>
+            <span>Curitiba, Paraná</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="content-container footer-inner">
+      <div class="footer-logo">
+        <img src="assets/serge-dev-logo.png" alt="SERGE.DEV" class="footer-logo-img">
+      </div>
+      <p class="footer-copyright">
+        © 2026 Serge Brito. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
